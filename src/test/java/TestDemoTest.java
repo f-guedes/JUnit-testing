@@ -28,7 +28,7 @@ class TestDemoTest {
         arguments(-20, 10, 100, true),
         arguments(100, 100, 200, false),
         arguments(-100, -100, -200, true),
-        arguments(50, 50, 95 , true)
+        arguments(12, 04, 16, false)
         );
     // @formatter:on
   }
@@ -55,13 +55,13 @@ class TestDemoTest {
   void assertThatNumberSquaredIsCorrect() {
     // Given: a random number picked. In this case, the number picked is 5
     TestDemo mockDemo = spy(testDemo);
-    doReturn(5).when(mockDemo).getRandomInt();
+    doReturn(10).when(mockDemo).getRandomInt();
 
     // When: The random number gets multiplied by itself (squared)
     int fiveSquared = mockDemo.randomNumberSquared();
 
     // Then: We verify that the multiplication is correct
-    assertThat(fiveSquared).isEqualByComparingTo(25);
+    assertThat(fiveSquared).isEqualByComparingTo(100);
 
 
   }
