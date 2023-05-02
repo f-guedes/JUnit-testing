@@ -1,1 +1,1 @@
-#  A simple project to demonstrate the use of JUnit testing. 
+#  A simple project to demonstrate the use of JUnit testing.
